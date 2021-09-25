@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:transitionName="">
+        <ImageView
+            android:id="@+id/logo_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/dish"
+            android:transitionName="logog_imamge"/>
+
+        <TextView
+            android:id="@+id/txy_nameapp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/allura"
+            android:text="SDFD"
+            android:transitionName="logo_text"
+            android:textAlignment="center"
+            android:textSize="70sp"
+            android:textStyle="bold"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="Hello there, Welcome Back"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:transitionName="logo_text" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In to continue"
+        android:textSize="18sp"
+        android:fontFamily="@font/antic"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:hint="Username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="#FF9800"
+            app:hintTextColor="#FF9800">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordname"
+            android:hint="Password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="#FF9800"
+            app:hintTextColor="#FF9800"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="Forget Password?"
+            android:layout_gravity="right"
+            android:elevation="0dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="374dp"
+            android:layout_height="100dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/btn_login1"
+                android:layout_width="100sp"
+                android:layout_height="55dp"
+                android:src="@drawable/google"
+                android:backgroundTint="@color/buttonColor1"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/btn_login2"
+                android:layout_width="120sp"
+                android:layout_height="55dp"
+                android:text="GO"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/buttonColor1"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+            <ImageButton
+                android:id="@+id/btn_login3"
+                android:layout_width="100sp"
+                android:layout_height="55dp"
+                android:src="@drawable/facebook"
+                android:backgroundTint="@color/buttonColor1"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnsignUp"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="New User ? SIGN UP"
+            android:layout_gravity="right"
+            android:elevation="0dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="0dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
